@@ -1,82 +1,31 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>RPA検証フォーム</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: sans-serif;
-            padding: 20px;
-        }
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            background-color: #333;
-            color: white;
-        }
-        input[type="radio"] {
-            width: auto;
-            margin-right: 10px;
-        }
-        .radio-group {
-            margin-bottom: 20px;
-        }
-        input[type="submit"] {
-            background-color: #555;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
     <h2>RPA検証用フォーム</h2>
     <form>
-        <label>
-            名前
-            <input type="text" name="name">
-        </label>
-        <label>
-            メール
-            <input type="email" name="email">
-        </label>
-        <label>
-            住所
-            <input type="text" name="address">
-        </label>
-        <label>
-            電話番号
-            <input type="tel" name="phone">
-        </label>
-        <label>
-            コメント
-            <input type="text" name="comment">
-        </label>
-        <label>
-            プルダウン選択
+        <label>名前: <input type="text" name="name"></label><br><br>
+        <label>メール: <input type="email" name="email"></label><br><br>
+        <label>住所: <input type="text" name="address"></label><br><br>
+        <label>電話番号: <input type="tel" name="phone"></label><br><br>
+        <label>コメント: <input type="text" name="comment"></label><br><br>
+
+        <label>選択肢（プルダウン）:
             <select name="dropdown">
                 <option value="option1">選択肢1</option>
                 <option value="option2">選択肢2</option>
                 <option value="option3">選択肢3</option>
             </select>
-        </label>
-        <div class="radio-group">
-            <label>3択ラジオ:</label><br>
-            <label><input type="radio" name="radio" value="A"> A</label>
-            <label><input type="radio" name="radio" value="B"> B</label>
-            <label><input type="radio" name="radio" value="C"> C</label>
-        </div>
+        </label><br><br>
+
+        <label>3択ラジオ:</label><br>
+        <label><input type="radio" name="radio" value="A"> A</label>
+        <label><input type="radio" name="radio" value="B"> B</label>
+        <label><input type="radio" name="radio" value="C"> C</label><br><br>
+
         <input type="submit" value="送信">
     </form>
 </body>
