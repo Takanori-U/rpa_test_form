@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RPA検証フォーム</title>
+</head>
+<body>
+    <h2>RPA検証用フォーム</h2>
+    <form>
+        <label>名前: <input type="text" name="name"></label><br><br>
+        <label>メール: <input type="email" name="email"></label><br><br>
+        <label>住所: <input type="text" name="address"></label><br><br>
+        <label>電話番号: <input type="tel" name="phone"></label><br><br>
+        <label>コメント: <input type="text" name="comment"></label><br><br>
+
+        <label>選択肢（プルダウン）:
+            <select name="dropdown">
+                <option value="option1">選択肢1</option>
+                <option value="option2">選択肢2</option>
+                <option value="option3">選択肢3</option>
+            </select>
+        </label><br><br>
+
+        <label>3択ラジオ:</label><br>
+        <label><input type="radio" name="radio" value="A"> A</label>
+        <label><input type="radio" name="radio" value="B"> B</label>
+        <label><input type="radio" name="radio" value="C"> C</label><br><br>
+
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
